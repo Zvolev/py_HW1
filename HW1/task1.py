@@ -15,3 +15,4 @@ if day_week.isdigit() and 0 < int(day_week) <8:
         print('рабочий')
 else:
     print('введены некрректные данные!')
+    
