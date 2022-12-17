@@ -6,7 +6,6 @@
 - x=2; y=4-> 1
 - x=-34; y=-30 -> 3 """
 
-
 def get_num(mass):
     while type:
         get_num = input('{0}=> '.format(mass))
