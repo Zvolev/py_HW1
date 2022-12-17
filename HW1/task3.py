@@ -11,7 +11,7 @@ def get_num(mass):
     while type:
         get_num = input('{0}=> '.format(mass))
         try:
-            get_temp_num = int(get_num)
+            get_temp_num = float(get_num)
         except ValueError:
             print('"' + get_num + '"' + ' - не является числом')
         else:                                   
