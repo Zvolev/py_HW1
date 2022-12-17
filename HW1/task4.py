@@ -5,7 +5,7 @@ def get_num(mass):
     while type:
         get_num = input('{0}=> '.format(mass))
         try:
-            get_temp_num = int(get_num)
+            get_temp_num = float(get_num)
         except ValueError:
             print('" ' + get_num + ' "' + ' - не является числом')
         else:                                   
@@ -24,5 +24,5 @@ def num_quarter(quarter):
     else:
         print('введены некорректные данные')
 
-quarter = int(get_num('Введите номер четверти координатной плоскости '))
+quarter = float(get_num('Введите номер четверти координатной плоскости '))
 num_quarter(quarter)
