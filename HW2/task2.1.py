@@ -9,10 +9,11 @@ in -> out
 num = float(input('введите вещественное число '))
 
 while num % 1 != 0:
-    num *= 10 
-num = abs(int(num))
+    num *= 10
 
+num = abs(int(num))
 sum = 0
+
 while num > 0:
     sum = sum + int(num % 10)
     num //= 10
