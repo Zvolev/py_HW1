@@ -28,9 +28,3 @@ if pos1 >= 1 and pos2 <= num*2+1:
     print('-> ', deriv)
 else:
     print('-> There are no values for these indexes!')
-
-
-
-
-
-
