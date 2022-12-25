@@ -16,8 +16,11 @@ out
 
 from random import randint
 import os
-clear = lambda: os.system('cls')
-clear()
+
+
+def clear():
+    return os.system('cls')
+
 
 def create_rand_list(length, start=0, stop=len):
     rand_list = []
@@ -25,14 +28,17 @@ def create_rand_list(length, start=0, stop=len):
         rand_list.append(randint(start, stop))
     return rand_list
 
+
 def sum_of_pairs_list(work_list):
     for i in range(int(len(work_list)/2)):
         work_list[i] *= work_list.pop(-1)
-    return work_list    
-       
-my_rand_list = create_rand_list(int(input('введите длину списка => ')), 
-                    int(input('введите начало диапазона => ')), 
-                    int(input('введите конец диапазона => ')))
+    return work_list
 
+
+clear()
+my_rand_list = create_rand_list(int(input('введите длину списка => ')),
+                                int(input('введите начало диапазона => ')),
+                                int(input('введите конец диапазона => ')))
 print(my_rand_list)
 print(sum_of_pairs_list(my_rand_list))
+print()
