@@ -18,3 +18,6 @@ while num > 0:
     sum = sum + int(num % 10)
     num //= 10
 print('сумма цифр равна ->  ', sum)
+
+
+# print(sum(map(int, list(input("Введите дробное число: ").replace(".", "")))))
