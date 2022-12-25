@@ -21,7 +21,7 @@ def clear():
     return os.system('cls')
 
 
-def create_rand_list_2floatsize(length, start=0, stop=1, size_round=2):
+def create_rand_list_2floatsize(length, start, stop, size_round=2):
     rand_list = []
     for i in range(length):
         rand_list.append(round(uniform(start, stop), size_round))
