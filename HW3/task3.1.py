@@ -14,15 +14,16 @@ out
 [4, 2, 4, 9]
 8 """
 
-from random import randint
+from random import randint, sample
 import os
 clear = lambda: os.system('cls')
 clear()
 
 def create_rand_list(len, start=0, stop=len):
-    rand_list = []
-    for _ in range(len):
-        rand_list.append(randint(start, stop))
+    #rand_list = []
+    #for _ in range(len):
+    #   rand_list.append(randint(start, stop))
+    rand_list = sample((range(start, stop)), len)  
     return rand_list
     
     
