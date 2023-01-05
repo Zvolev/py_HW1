@@ -23,7 +23,7 @@ def max_min_finder(any_list):
 print(*max_min_finder(check())) """
 
 
-""" # 2. Найдите корни квадратного уравнения Ax² + Bx + C = 0,
+# 2. Найдите корни квадратного уравнения Ax² + Bx + C = 0,
 # с помощью дополнительных библиотек python. Запросите значения А, В, С 3 раза.
 # Уравнения и корни запишите в файл.
 
@@ -46,18 +46,18 @@ def find_r(a, b, c):
             my_f.write("нет корней\n")
 
 
-find_r(3, 8, 5) """
+find_r(3, 8, 5)
 
 # 3. На вход программе подается число n.
 # Программа печатает численный треугольник.
 # Используем вложенные циклы.
 
-iteration = int(input("Введите число -> "))
+""" iteration = int(input("Введите число -> "))
 for i in range(1, iteration+1):
     for k in range(i):
         print(i, end='')
     print()
-
+ """
 
 """ Простые делители числа
 https://autogear.ru/article/371/831/chislo-prostyih-deliteley-chisla-skolko-deliteley-imeet-prostoe-chislo/
