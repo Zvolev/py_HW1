@@ -50,7 +50,9 @@ def create_polinom(degree: int):
 
 create_polinom(6) """
 
-from random import randint, sample
+from random import sample
+
+
 def create_polinom(degree: int):
     polinom_list = []
     coefficient = sample(range(-10, 10), 15)
@@ -75,6 +77,7 @@ def create_polinom(degree: int):
             degree -= 1
             coef_i += 1
         my_f.write('\n')
+        my_f.close()
 
 
-create_polinom(2)
+create_polinom(int(input('Задайте натуральную степень: ')))
